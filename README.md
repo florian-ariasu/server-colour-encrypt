@@ -82,24 +82,45 @@ This repository contains solutions to five algorithmic problems, each requiring 
 To test the programs, create input files manually and use the Makefile rules. Here are sample test cases for each problem:
 
 1. **Server Power (server.cpp)**
-   - Input: `4 6 9 7 5 2 4 1 8`
-   - Expected Output: `2.5`
+   - Input:
+   - `4`
+   - `6 9 7 5`
+   - `2 4 1 8`
+   - Expected Output:
+   - `2.5`
 
 2. **Coloring**
-   - Input: `2 1 H 1 V`
-   - Expected Output: `6`
+   - Input:
+   - `2`
+   - `1 H 1 V`
+   - Expected Output:
+   - `6`
 
 3. **Compression**
-   - Input: `6 11 2 2 1 8 6 7 3 8 2 1 2 11 3`
-   - Expected Output: `4`
+   - Input:
+   - `6`
+   - `11 2 2 1 8 6`
+   - `7`
+   - `3 8 2 1 2 11 3`
+   - Expected Output:
+   - `4`
 
 4. **Encryption**
-   - Input: `4 too otter tote oo`
-   - Expected Output: `9`
+   - Input:
+   - `4`
+   - `too`
+   - `otter`
+   - `tote`
+   - `oo`
+   - Expected Output:
+   - `9`
 
 5. **Offer**
-   - Input: `5 1 80 27 10 20 300`
-   - Expected Output: `413.5`
+   - Input:
+   - `5 1`
+   - `80 27 10 20 300`
+   - Expected Output:
+   - `413.5`
 
 ---
 
