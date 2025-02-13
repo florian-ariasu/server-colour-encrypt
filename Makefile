@@ -1,5 +1,3 @@
-# Example Makefile for solutions written in C++.
-
 CC = g++
 CCFLAGS = -Wall -Wextra -std=c++17 -O0 -lm
 
@@ -7,7 +5,7 @@ CCFLAGS = -Wall -Wextra -std=c++17 -O0 -lm
 
 build: p1 p2 p3 p4 p5
 
-# Do not compile here, not even as rule dependencies.
+# Run commands
 run-p1:
 	./p1
 run-p2:
@@ -19,18 +17,19 @@ run-p4:
 run-p5:
 	./p5
 
-# Change the source file names (and, if necessary, the executable names - everywhere).
-p1: server.cpp
+# Compilation rules (updated to use src/)
+p1: src/server.cpp
 	$(CC) -o $@ $^ $(CCFLAGS)
-p2: colouring.cpp
+p2: src/colouring.cpp
 	$(CC) -o $@ $^ $(CCFLAGS)
-p3: compression.cpp
+p3: src/compression.cpp
 	$(CC) -o $@ $^ $(CCFLAGS)
-p4: encryption.cpp
+p4: src/encryption.cpp
 	$(CC) -o $@ $^ $(CCFLAGS)
-p5: offer.cpp
+p5: src/offer.cpp
 	$(CC) -o $@ $^ $(CCFLAGS)
 
-# We will delete the executables.
+# Cleanup
 clean:
 	rm -f p1 p2 p3 p4 p5
+	rm -f *.out
